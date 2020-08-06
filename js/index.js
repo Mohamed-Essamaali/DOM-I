@@ -44,25 +44,34 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // navigation links
     let links =  document.querySelectorAll("a");
+// updated to access object's key by using dot notation instead of string
 
-    links[0].textContent=siteContent["nav"]["nav-item-1"];
-    links[1].textContent=siteContent["nav"]["nav-item-2"];
-    links[2].textContent=siteContent["nav"]["nav-item-3"];
-    links[3].textContent=siteContent["nav"]["nav-item-4"];
-    links[4].textContent=siteContent["nav"]["nav-item-5"];
-    links[5].textContent=siteContent["nav"]["nav-item-6"];
+    links[0].textContent=siteContent.nav['nav-item-1'];
+    links[1].textContent=siteContent.nav["nav-item-2"];
+    links[2].textContent=siteContent.nav["nav-item-3"];
+    links[3].textContent=siteContent.nav["nav-item-4"];
+    links[4].textContent=siteContent.nav["nav-item-5"];
+    links[5].textContent=siteContent.nav[`nav-item-6`];
     
+    let i=0;
+    // links.map((e,i) => {
+      
+    //   textContent=siteContent.nav[`nav-item-${i}`]
+    //   i++;
+    // }
+    //   )
+
     // header text
     let ctaHeader = document.querySelector('.cta .cta-text h1');
-    ctaHeader.textContent = siteContent["cta"]["h1"];
+    ctaHeader.textContent = siteContent.cta.h1;
 
   // header button
     let ctaBtn = document.querySelector('.cta .cta-text button');
-    ctaBtn.textContent = siteContent["cta"]["button"];
+    ctaBtn.textContent = siteContent.cta.button;
 
   // header img
-  let contentCta = document.getElementById('cta-img')
-  contentCta.setAttribute('src', siteContent["cta"]["img-src"]);
+  let ctaHeaderImg = document.getElementById('cta-img')
+  ctaHeaderImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
   //  top content h4
   let topH4 = document.querySelectorAll(' .main-content .top-content h4');
