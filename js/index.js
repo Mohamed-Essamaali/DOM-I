@@ -50,3 +50,15 @@ links[5].textContent = siteContent.nav['nav-item-6']
 
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//header text
+
+const headerCta = document.querySelector('.cta .cta-text h1');
+headerCta.textContent = siteContent.cta.h1;
+//header button
+const buttonCta = document.querySelector('.cta .cta-text button');
+buttonCta.textContent = siteContent.cta.button;
+//header image
+const headerImg = document.querySelector('#cta-img');
+headerImg.src= siteContent.cta["img-src"];
+
