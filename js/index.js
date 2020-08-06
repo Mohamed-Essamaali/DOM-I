@@ -128,6 +128,18 @@ ourMission.style.color='#0e1482'
 ourMission.style.fontWeight='650'
 navs.prepend(ourMission)
 
+//stretch
+
+
+const header = document.querySelector('.cta')
+
+buttonCta.addEventListener('click', e=>{header.textContent='Button Clicked';
+header.style.fontSize='5rem';
+header.style.margin='0 10%';
+header.style.padding = '2% 10%'
+header.style.backgroundColor='green'});
+
+
 
 
 
