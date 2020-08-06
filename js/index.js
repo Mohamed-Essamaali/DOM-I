@@ -62,3 +62,13 @@ buttonCta.textContent = siteContent.cta.button;
 const headerImg = document.querySelector('#cta-img');
 headerImg.src= siteContent.cta["img-src"];
 
+//top content
+
+const topContentH4 = document.querySelectorAll('.main-content .top-content .text-content h4')
+topContentH4[0].textContent = siteContent["main-content"]["features-h4"];
+topContentH4[1].textContent = siteContent["main-content"]["about-h4"];
+
+const topContentText = document.querySelectorAll('.main-content .top-content .text-content p')
+topContentText[0].textContent = siteContent["main-content"]["features-content"]
+topContentText[1].textContent = siteContent["main-content"]["about-content"]
+
