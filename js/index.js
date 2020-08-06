@@ -48,6 +48,8 @@ links[3].textContent = siteContent.nav['nav-item-4']
 links[4].textContent = siteContent.nav['nav-item-5']
 links[5].textContent = siteContent.nav['nav-item-6']
 
+
+
 //logo img
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
@@ -92,13 +94,41 @@ bottomContent[1].textContent = siteContent['main-content']['product-content']
 bottomContent[2].textContent = siteContent['main-content']['vesion-content']
 
 //contact section
-const contactH4 = document.querySelector('.contact h4');
+const contactH4 = document.querySelectorAll('.contact h4');
 contactH4.textContent = siteContent.contact['contact-h4']
 
 const contactInfo = document.querySelectorAll('.contact p');
 contactInfo[0].textContent = siteContent.contact.address;
 contactInfo[1].textContent = siteContent.contact.phone;
 contactInfo[2].textContent = siteContent.contact.email;
+
+
+//my 2nd pull request for differnt branch
+//https://github.com/Mohamed-Essamaali/DOM-I/pull/2  
+
+//style links to be green
+links.forEach(item =>{
+  item.style.color='green'
+})
+
+// adding two more items in the navigation links
+const navs = document.querySelector('nav')
+
+const home = document.createElement('a');
+home.textContent = 'Home'
+home.href = '#'
+home.style.color='#0e1482'
+home.style.fontWeight='650'
+navs.prepend(home)
+
+const ourMission = document.createElement('a');
+ourMission.textContent = 'Our Mission'
+ourMission.href = '#'
+ourMission.style.color='#0e1482'
+ourMission.style.fontWeight='650'
+navs.prepend(ourMission)
+
+
 
 
 
