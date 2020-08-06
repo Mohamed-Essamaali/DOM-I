@@ -48,22 +48,23 @@ links[3].textContent = siteContent.nav['nav-item-4']
 links[4].textContent = siteContent.nav['nav-item-5']
 links[5].textContent = siteContent.nav['nav-item-6']
 
+//logo img
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //header text
-
 const headerCta = document.querySelector('.cta .cta-text h1');
 headerCta.textContent = siteContent.cta.h1;
+
 //header button
 const buttonCta = document.querySelector('.cta .cta-text button');
 buttonCta.textContent = siteContent.cta.button;
+
 //header image
 const headerImg = document.querySelector('#cta-img');
 headerImg.src= siteContent.cta["img-src"];
 
 //top content
-
 const topContentH4 = document.querySelectorAll('.main-content .top-content .text-content h4')
 topContentH4[0].textContent = siteContent["main-content"]["features-h4"];
 topContentH4[1].textContent = siteContent["main-content"]["about-h4"];
@@ -71,4 +72,38 @@ topContentH4[1].textContent = siteContent["main-content"]["about-h4"];
 const topContentText = document.querySelectorAll('.main-content .top-content .text-content p')
 topContentText[0].textContent = siteContent["main-content"]["features-content"]
 topContentText[1].textContent = siteContent["main-content"]["about-content"]
+
+//middle image
+
+const middleImg = document.querySelector('#middle-img');
+
+middleImg.src=siteContent['main-content']['middle-img-src'];
+
+//bottom section
+
+const bottomContentH4 = document.querySelectorAll('.main-content .bottom-content .text-content h4');
+bottomContentH4[0].textContent = siteContent['main-content']['services-h4']
+bottomContentH4[1].textContent = siteContent['main-content']['product-h4']
+bottomContentH4[2].textContent = siteContent['main-content']['vesion-h4']
+
+const bottomContent = document.querySelectorAll('.main-content .bottom-content .text-content p');
+bottomContent[0].textContent = siteContent['main-content']['services-content']
+bottomContent[1].textContent = siteContent['main-content']['product-content']
+bottomContent[2].textContent = siteContent['main-content']['vesion-content']
+
+//contact section
+const contactH4 = document.querySelector('.contact h4');
+contactH4.textContent = siteContent.contact['contact-h4']
+
+const contactInfo = document.querySelectorAll('.contact p');
+contactInfo[0].textContent = siteContent.contact.address;
+contactInfo[1].textContent = siteContent.contact.phone;
+contactInfo[2].textContent = siteContent.contact.email;
+
+
+
+
+
+
+
 
